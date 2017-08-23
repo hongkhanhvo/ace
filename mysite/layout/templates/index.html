@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Bootstrap Theme Company Page</title>
+  <title>ACE ENGLISH Cần Thơ</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -153,6 +153,19 @@
       -webkit-animation-duration: 1s;
       visibility: visible;
   }
+
+  .slides_container {
+     width:100%;
+     height:500px;
+  }
+
+  .slides_container div, .slides_container img {
+    width:1100px;
+    height:500px;
+    text-align:center;
+    margin:0 auto;
+  }
+
   @keyframes slide {
     0% {
       opacity: 0;
@@ -196,21 +209,23 @@
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-	<img src ="https://www.flickr.com/photos/150991982@N06/35942802353/in/dateposted-public/">
+	{% load static %}
+	<img src="{% static "ace.png" %}" alt="image 1" width="1000" height="255" align="middle"/>
+        
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage" ></a>
+      <a class="navbar-brand" href="/" ></a>
 	
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">GIỚI THIỆU</a></li>
-        <li><a href="#services">KHÓA HỌC</a></li>
-        <li><a href="#portfolio">TIN TỨC</a></li>
-        <li><a href="#pricing">THƯ VIỆN</a></li>
-        <li><a href="#contact">LIÊN HỆ</a></li>
+        <li><a href="/about">GIỚI THIỆU</a></li>
+        <li><a href="/courses">KHÓA HỌC</a></li>
+        <li><a href="/">TIN TỨC</a></li>
+        <li><a href="/">THƯ VIỆN</a></li>
+        <li><a href="/contact">LIÊN HỆ</a></li>
       </ul>
     </div>
   </div>
@@ -220,7 +235,7 @@
 <!-- Container (Portfolio Section) -->
 <div id="portfolio" class="container-fluid text-center bg-grey">
   
-  <h2>What our customers say</h2>
+  <!-- <h2> ACE ENGLISH </h2> -->
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -232,13 +247,23 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
+	<div class='slides_container'>
+	{% load static %}
+	<img src="{% static "ad.png" %}" alt="image 1" width="600" height="255" />
+	</div>
+        
       </div>
       <div class="item">
-        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
+	<div class='slides_container'>
+        {% load static %}
+	<img src="{% static "cover.png" %}" alt="image 2" width="600" height="255" />
+        </div>
       </div>
       <div class="item">
-        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
+	<div class='slides_container'>
+        {% load static %}
+	<img src="{% static "recruit.png" %}" alt="image 3" width="600" height="255" />
+        </div>
       </div>
     </div>
 
@@ -254,28 +279,31 @@
   </div>
 
 
-  <h2>Portfolio</h2><br>
-  <h4>What we have created</h4>
+  <h2>Đội ngũ giáo viên</h2><br>
+  <h4>Thân thiện, tận tâm, nhiệt tình</h4>
   <div class="row text-center slideanim">
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="paris.jpg" alt="Paris" width="400" height="300">
-        <p><strong>Paris</strong></p>
-        <p>Yes, we built Paris</p>
+        {% load static %}
+	<img src="{% static "person.png" %}" alt="person 1"/>
+        <p><strong>Person 1</strong></p>
+        <p>TOEIC 990</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="newyork.jpg" alt="New York" width="400" height="300">
-        <p><strong>New York</strong></p>
-        <p>We built New York</p>
+        {% load static %}
+	<img src="{% static "person.png" %}" alt="person 2"/>
+        <p><strong>Person 2</strong></p>
+        <p>TOEIC 990</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
-        <p><strong>San Francisco</strong></p>
-        <p>Yes, San Fran is ours</p>
+        {% load static %}
+	<img src="{% static "person.png" %}" alt="person 3"/>
+        <p><strong>Person 3</strong></p>
+        <p>TOEIC 990</p>
       </div>
     </div>
   </div><br>
@@ -327,76 +355,127 @@
 </div>
 
 
-<!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center">CONTACT</h2>
-  <div class="row">
-    <div class="col-sm-5">
-      <p>Contact us and we'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
-    </div>
-    <div class="col-sm-7 slideanim">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- Add Google Maps -->
-<div id="googleMap" style="height:400px;width:100%;"></div>
-<script>
-function myMap() {
-var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-var marker = new google.maps.Marker({position:myCenter});
-marker.setMap(map);
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
-
-<div class="jumbotron text-center">
-  <form>
-    <div class="input-group">
-      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-      <div class="input-group-btn">
-        <button type="button" class="btn btn-danger">Subscribe</button>
-      </div>
-    </div>
-  </form>
-</div>
 
 
 <footer class="container-fluid text-center">
-  <a href="#myPage" title="To Top">
+  <a href="/" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
   
 </footer>
 
+<!-- #Footer -->		
+<footer id="Footer" class="clearfix">
+	
+		
+	<div class="widgets_wrapper" style="">
+	<div class="container"><div class="column one-third">
+	<aside id="text-2" class="widget widget_text">
+<h4>ACE ENGLISH</h4>			
+<div class="textwidget">
+<head>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+
+<footer class="footer-distributed">
+			<div class="footer-left">
+				{% load static %}
+				<img src="{% static "ace.png" %}" alt="logo" width="90px" height="64px" />
+			
+
+				<p class="footer-links">
+					<a href="/about">Giới thiệu</a>
+					·
+					<a href="/">Tin tức</a>
+					·
+					<a href="/courses">Khóa Học</a>
+					·
+					<a href="/">Thư viện</a>
+					·
+					<a href="/contact">Liên hệ</a>
+					·
+					<a href="https://docs.google.com/forms/d/1XyYRBd93N2uiOlGAR4LLcQXoZG0XjFEdPzeU0cxaFxM/viewform?edit_requested=true">Đăng Ký</a>
+					
+				</p>
+			</div>
+		</footer></div>
+		</aside></div>
+<div class="column one-third"><aside id="text-3" class="widget widget_text">			
+<div class="textwidget">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<footer class="footer-distributed">
+<div class="footer-center">
+<p class="footer-contact">
+<span>LIÊN HỆ</span></p>
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p>29/6 Ngô Văn Sở, P. Tân An, Q. Ninh Kiều, TP. Cần Thơ </p>
+				</div>
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+84 90 754 94 96</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:aceenglish@gmail.com">aceenglish@gmail.com</a></p>
+				</div>
+			</div>
+		</footer></div>
+		</aside></div>
+<div class="column one-third"><aside id="text-4" class="widget widget_text">			
+<div class="textwidget">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<footer class="footer-distributed">
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>GIỚI THIỆU</span>
+					bla bla bla 
+				</p>
+
+				<div class="footer-icons">
+					<a href="https://www.facebook.com/ACE-English-Anh-ng%E1%BB%AF-C%E1%BA%A7n-Th%C6%A1-283869988449956/><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-youtube"></i></a>
+
+				</div>
+			</div>
+		</footer></div>
+		</aside></div></div></div>
+
+		
+		<div class="footer_copy">
+			<div class="container">
+				<div class="column one">
+
+										
+					<!-- Copyrights -->
+					<div class="copyright">
+						© 2017 Ace English Centre. All Rights Reserved.					</div>
+					
+					<ul class="social"></ul>							
+				</div>
+			</div>
+		</div>
+	
+		
+	
+	
+	
+</footer>
+
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+  $(".navbar a, footer a[href='/']").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior

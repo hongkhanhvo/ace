@@ -25,7 +25,9 @@ SECRET_KEY = '1&pn*#6*_)&)dyn)gryq(#*@&ghn5(di6(f34-)l7)vbstu=79'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['aceenglish.pythonanywhere.com',
+'127.0.0.1',
+]
 
 
 # Application definition
