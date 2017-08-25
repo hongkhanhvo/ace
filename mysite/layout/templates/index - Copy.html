@@ -134,7 +134,7 @@
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
       color: #f4511e !important;
-      background-color: transparent !important;
+      background-color: #fff !important;
   }
   .navbar-default .navbar-toggle {
       border-color: transparent;
@@ -203,20 +203,21 @@
   }
   </style>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="homepage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-	{% load static %}
-	<img src="{% static "ace.png" %}" alt="image 1" width="1000" height="255" align="middle"/>
+	
         
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="/" ></a>
+      <a class="navbar-brand" href="/" >
+		{% load static %}
+		<img src="{% static "ace.png" %}" alt="image 1"/></a>
 	
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
