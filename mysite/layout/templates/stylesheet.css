@@ -1,0 +1,119 @@
+.carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #f4511e;
+   }
+   .carousel-indicators li {
+      border-color: #f4511e;
+   }
+   .carousel-indicators li.active {
+      background-color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+
+  
+    .slides_container div, {
+    background-position: center;
+	background-size:cover;
+	background: transparent;
+	text-align:center;
+    margin:0;
+  }
+  
+  
+	.slides_container img {
+	width:100%;
+	filter: brightness(70%);
+	
+	}
+
+.carousel-inner{
+	height:100%;
+    max-height: 500px !important;
+}
+  .container {
+	
+	background-color:transparent;
+  }
+  
+  .navbar {
+      margin-bottom: 0;
+      z-index: 9999;
+      border: 0;
+      font-size: 13px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 3px;
+      border-radius: 0;
+      margin:0 auto;
+	  background-color:#333;
+	  opacity: 0.9;
+	  color: #fff !important;
+	  text-align: center;
+	  width: 100%;
+	  
+  }
+  .navbar li a, .navbar .navbar-brand {
+		display:block;
+		text-align: center;
+		letter-spacing: 3px;
+		padding: 14px 20px;
+		text-decoration: none;
+		color: #fff !important;
+		margin:5px 5px 5px 10px;
+		float:right;
+		
+		
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f4511e !important;
+      background-color: transparent !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: transparent !important;
+  }
+  .icon-large{
+		font-size:30px;
+		color:#f4511e;
+	}
+
+	.viewmore button{
+		color:#fff !important;
+	}
+	
+	.viewmore a{
+		color:#fff !important;
+		text-decoration: none;
+	}
+  .viewmore a:hover{
+		color:#fff !important;
+		text-decoration: none;
+	}
+	.course-info{
+		background-color:#f4511e;
+	}
+	.bg-orange{
+		background-color: #f4511e;
+	}
+	.text-white{
+		color:white;
+	}
+	.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}

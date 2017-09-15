@@ -5,100 +5,65 @@
   <title>ACE ENGLISH Cần Thơ</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="ace, english, cần thơ, can tho" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <!-- themify-icons -->
+  <link href="static/icons/themify-icons.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="static/stylesheet.css">
+  <link rel="stylesheet" href="/static/footer-distributed-with-address-and-phones.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-	.carousel-control.right, .carousel-control.left {
-      background-image: none;
-      color: #f4511e;
-   }
-   .carousel-indicators li {
-      border-color: #f4511e;
-   }
-   .carousel-indicators li.active {
-      background-color: #f4511e;
-  }
-  .slideanim {visibility:hidden;}
-  .slide {
-      animation-name: slide;
-      -webkit-animation-name: slide;
-      animation-duration: 1s;
-      -webkit-animation-duration: 1s;
-      visibility: visible;
-  }
-
-  .slides_container {
-     width:1265px;
-     height:650px;
-  }
-
-  .slides_container div, .slides_container img {
-    width:1265px;
-    height:650px;
-    text-align:center;
-    margin:0 auto;
-  }
+ 
   
-  .container {
-	background-color:transparent;
-  }
-  
-  .navbar {
-      margin-bottom: 0;
-      z-index: 9999;
-      border: 0;
-      font-size: 16px !important;
-      line-height: 1.42857143 !important;
-      letter-spacing: 3px;
-      border-radius: 0;
-      font-family: Montserrat, sans-serif;
-	  background-color:transparent;
-	  
-  }
-  .navbar li a, .navbar .navbar-brand {
-      color: #fff !important;
-  }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #f4511e !important;
-      background-color: transparent !important;
-  }
-  .navbar-default .navbar-toggle {
-      border-color: transparent;
-      color: transparent !important;
-  }
-  
-  </style>
 </head>
 <body id="homepage">
 	
-	<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
 	
+	<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+		
 		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-						
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>                        
-					  </button>
-					  <a class="navbar-brand" href="/" >{% load static %}
-						<img src="{% static "open-book.png" %}" alt="image 1" width="55"><figcaption>ACE</figcaption></img></a>
-						
-		
+					</button>
+					<a class="navbar-brand navbar-left href="/"">ACEicon</a>
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 				  <ul class="nav navbar-nav navbar-right">
+					<li><a href="/"><i class="fa ti-home icon-small text-white tz-icon-color"></i></a></li>
 					<li><a href="/about">GIỚI THIỆU</a></li>
-					<li><a href="/courses">KHÓA HỌC</a></li>
+					<li class="dropdown"><a  href="/contact" class="dropdown-toggle" data-toggle="dropdown">KHÓA HỌC <i class="fa ti-angle-down icon-extra-small text-white tz-icon-color"></i></a>
+						<div class="dropdown-content">
+						  <hr>
+						  <a href="/toeic">TOEIC</a>
+						  <a href="/vstep">VSTEP</a>
+						  <a href="/ielts">IELTS</a>
+						  <a href="/giao-tiep">GIAO TIẾP</a>
+						</div>
+					
+					</li>
 					<li><a href="/">TIN TỨC</a></li>
-					<li><a href="/">THƯ VIỆN</a></li>
+					
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/achievements">THÀNH TÍCH <i class="fa ti-angle-down icon-extra-small text-white tz-icon-color"></i></a>
+						<div class="dropdown-content">
+						<hr>
+						  <a href="/thanh-tich-toeic">TOEIC</a>
+						  <a href="/thanh-tich-vstep">VSTEP</a>
+						  <a href="/thanh-tich-ielts">IELTS</a>
+						</div>
+					</li>
 					<li><a href="/contact">LIÊN HỆ</a></li>
 				  </ul>
 				</div>
 			</div>
 		</nav>
+
+		
 
 	
     <!-- Indicators -->
@@ -113,42 +78,197 @@
       <div class="item active">
 		<div class='slides_container'>
 		{% load static %}
-		<img src="{% static "background2.jpg" %}" alt="image 1" />
+		<img src="{% static "a.jpg" %}" alt="image 1"  />
 		</div>
 			
 		  </div>
        <div class="item">
 	<div class='slides_container'>
         {% load static %}
-	<img src="{% static "b3.jpg" %}" alt="image 2" />
+	<img src="{% static "b.jpg" %}" alt="image 2" />
         </div>
       </div>
     </div>
 
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <!--span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span-->
       <span class="sr-only">Previous</span>
     </a>
     <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <!--span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span-->
       <span class="sr-only">Next</span>
     </a>
 	</div>
- 
-  
-     </div>
+	
+	
+	<div class="jumbotron">
+		<div class="container">
+                <div class="row">
+                    <!-- section title -->
+                    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                        <h2 class="section-title-large sm-section-title-medium xs-section-title-large text-dark-gray font-weight-600 alt-font margin-thirteen-bottom xs-margin-nineteen-bottom tz-text">TẠI SAO CHỌN ACE?</h2>
+                    </div>
+                    <!-- end section title -->
+                </div>
+				<hr><br>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 four-column">
+                        <!-- feature box -->
+                        <div class="col-md-3 col-sm-6 col-xs-12 text-center sm-margin-nine-bottom xs-margin-nineteen-bottom">
+                            <div class="margin-nineteen-bottom sm-margin-thirteen-bottom xs-margin-nine-bottom"><img alt="" src="static/team.png" width=100px></div>
+                            <h3 class="text-medium text-dark-gray alt-font margin-three-bottom display-block sm-margin-nine-bottom xs-margin-five-bottom tz-text font-weight-500">GIÁO VIÊN </h3>
+                            <div class="text-medium tz-text"><p> Có tâm và có "tầm".</p></div>
+                        </div>
+                        <!-- end feature box -->
+                        <!-- feature box -->
+                        <div class="col-md-3 col-sm-6 col-xs-12 text-center sm-margin-nine-bottom xs-margin-nineteen-bottom">
+                            <div class="margin-nineteen-bottom sm-margin-thirteen-bottom xs-margin-nine-bottom"><img alt="" src="static/presentations.png" width=100px></div>
+                            <h3 class="text-medium text-dark-gray alt-font margin-three-bottom display-block sm-margin-nine-bottom xs-margin-five-bottom tz-text font-weight-500">LỚP HỌC</h3>
+                            <div class="text-medium tz-text"><p>Sinh động, thân thiện và dễ gây "nghiện".</p></div>
+                        </div>
+                        <!-- end feature box -->
+                        <!-- feature box -->
+                        <div class="col-md-3 col-sm-6 col-xs-12 text-center xs-margin-nine-bottom xs-margin-nineteen-bottom">
+                            <div class="margin-nineteen-bottom sm-margin-thirteen-bottom xs-margin-nine-bottom"><img alt="" src="static/note.png " width=100px></div>
+                            <h3 class="text-medium text-dark-gray alt-font margin-three-bottom display-block sm-margin-nine-bottom xs-margin-five-bottom tz-text font-weight-500"> GIÁO TRÌNH</h3>
+                            <div class="text-medium tz-text"><p>Cập nhật liên tục, bám sát đề thi, "ôn tủ nhưng mà đủ".</p></div>
+                        </div>
+                        <!-- end feature box -->
+                        <!-- feature box -->
+                        <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                            <div class="margin-nineteen-bottom sm-margin-thirteen-bottom xs-margin-nine-bottom"><img alt="" src="static/search.png" width=100px></div>
+                            <h3 class="text-medium text-dark-gray alt-font margin-three-bottom display-block sm-margin-nine-bottom xs-margin-five-bottom tz-text font-weight-500"> HỌC PHÍ</h3>
+                            <div class="text-medium tz-text"><p>Vừa vặn không quá nặng.</p></div>
+                        </div>
+                        <!-- end feature box -->
+                    </div>
+                </div>
+        </div>    
+										
+	</div>
+	
+	
+	<section class="padding-110px-tb xs-padding-60px-tb bg-white builder-bg">
+            <div class="container bg-blue">
+                <div class="row equalize sm-equalize-auto">
+	<!-- section title -->
+                    <div class="col-md-5 col-sm-12 col-xs-12 display-table xs-text-center sm-margin-twenty-bottom xs-margin-twenty-nine-bottom info-container margin-top-10px" style="">                            
+                        <div class="display-table-cell-vertical-middle">
+                            <!-- section title -->
+                            <h2 class="alt-font title-large sm-title-large xs-title-large text-dark-gray margin-eight-bottom tz-text sm-margin-five-bottom">Các khóa học tiếng anh<br>với chất lượng hàng đầu</h2>
+                            <!-- end section title -->
+                            <!--div class="text-medium tz-text width-90 sm-width-100 margin-twelve-bottom sm-margin-five-bottom"><p>Khai giảng thường xuyên</p></div-->
+                            <button class="button bg-orange"><a class="btn btn-medium propClone btn-circle text-white" href="https://docs.google.com/forms/d/1_rHfPfKRF5vxn2Aj8lBzgqSNylThLp24WHGbZTptYcU/viewform?edit_requested=true"><span class="tz-text">ĐĂNG KÍ </span><i class="fa ti-angle-right icon-extra-small tz-icon-color text-white"></i></a></button>
+                        <br><br><br>
+						</div>
+                    </div>
+                    <!-- end section title -->
+                    <!-- feature box -->
+                    <div class="col-md-7 col-sm-12 col-xs-12 display-table" style="">
+                        <div class="display-table-cell-vertical-middle ">
+                            
+                                <div class="col-md-6 col-sm-6 col-xs-12 margin-five-bottom xs-margin-ten-bottom xs-text-center info-container ">
+                                    <div class="float-left width-100 margin-four-bottom"> 
+                                        <div class="info col-md-2 col-sm-2 col-xs-12 no-padding"><i class="fa ti-medall-alt icon-medium "></i> </div>
+                                        <h3 class="text-medium font-weight-600 text-dark-gray col-md-10 col-sm-10 col-xs-12 no-padding margin-one-top tz-text">IELTS</h3> 
+                                    </div>
+                                    <div class="text-medium sm-text-medium float-left tz-text"><p>IELTS SPEAKING 5.5</p></div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12 margin-five-bottom xs-margin-ten-bottom xs-text-center margin-top-10px info-container">
+                                    <div class="float-left width-100 margin-four-bottom"> 
+                                        <div class="info col-md-2 col-sm-2 col-xs-12 no-padding"><i class="fa ti-bookmark-alt icon-medium text-red tz-icon-color"></i> </div>
+                                        <h3 class="text-medium font-weight-600 text-dark-gray col-md-10 col-sm-10 col-xs-12 no-padding margin-two-top tz-text">TOEIC</h3> 
+                                    </div>
+                                    <div class="text-medium sm-text-medium float-left tz-text"><p>Pre-TOEIC, TOEIC 1 (500+), TOEIC 2 (650+)</p></div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12 xs-margin-ten-bottom xs-text-center info-container margin-top-10px .margin-right-10px">
+                                    <div class="float-left width-100 margin-four-bottom"> 
+                                        <div class="info col-md-2 col-sm-2 col-xs-12 no-padding"><i class="fa ti-pencil-alt icon-medium text-red tz-icon-color"></i> </div>
+                                        <h3 class="text-medium font-weight-600 text-dark-gray col-md-10 col-sm-10 col-xs-12 no-padding margin-two-top tz-text">VSTEP</h3> 
+                                    </div>
+                                    <div class="text-medium sm-text-medium float-left tz-text"><p class="no-margin-bottom">Anh Văn Căn bản, Level B1, B2, C1</p></div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12 xs-text-center info-container margin-top-10px">
+                                    <div class="float-left width-100 margin-four-bottom"> 
+                                        <div class="info col-md-2 col-sm-2 col-xs-12 no-padding"><i class="fa ti-comments icon-medium text-red tz-icon-color"></i> </div>
+                                        <h3 class="text-medium font-weight-600 text-dark-gray col-md-10 col-sm-10 col-xs-12 no-padding margin-one-top tz-text">Giao Tiếp</h3> 
+                                    </div>
+                                    <div class="text-medium sm-text-medium float-left tz-text"><p class="no-margin-bottom">Căn bản và Trung Cấp</p></div>
+                                </div>
+                            
+                        </div>
+                    </div>
+                    <!-- end feature box -->
+                </div>
+            </div>
+        </section>
+	
+	
+	
+	<footer class="footer-distributed">
 
+			<div class="footer-left">
 
+				<h3>Ace<span>English</span></h3>
 
+				<p class="footer-links">
+					<a href="#">Trang Chủ</a>
+					·
+					<a href="#">Giới Thiệu</a>
+					·
+					<a href="#">Khóa Học</a>
+					·
+					<a href="#">Tin Tức</a>
+					·
+					<a href="#">Thành Tích</a>
+					·
+					<a href="#">Liên Hệ</a>
+				</p>
 
+				<p class="footer-company-name">ACE English &copy; 2017</p>
+			</div>
 
+			<div class="footer-center">
 
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>29/6 Ngô Văn Sở, P. Tân An, Q. Ninh Kiều </span> TP. Cần Thơ</p>
+				</div>
 
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+84 90 754 94 96</p>
+				</div>
 
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:aceenglish.cantho@gmail.com">aceenglish.cantho@gmail.com</a></p>
+				</div>
 
+			</div>
 
+			<div class="footer-right">
 
+				<p class="footer-company-about">
+					<span>About the company</span>
+					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+
+	
 
 </body>
 </html>  
