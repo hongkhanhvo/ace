@@ -12,11 +12,57 @@
   <!-- themify-icons -->
   <link href="/static/icons/themify-icons.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/static/stylesheet.css">
+  <link rel="stylesheet" href="/static/footer-distributed-with-address-and-phones.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
  
   
-
+	<style>
+		.footer-center a, .footer-icons a{
+			color:white !important;
+			text-decoration:none;
+		}
+		
+		.footer-center a:hover, .footer-icons a:hover, .footer-links a:hover{
+			color:#f4511e !important;
+			text-decoration:none;
+		}
+		.footer-distributed{
+			margin-top:0px;
+			background-color:#333;
+			opacity: 0.9;
+			color: #fff !important;}
+		.button:hover{
+			background-color: #f4511e;
+			color:white;
+		}
+		
+		.button a:hover{
+			background-color:transparent;
+			color:white;}
+			
+		.button {
+			border-radius: 40px;
+			border: 1px solid #f4511e;
+			background-color:transparent;
+			text-align: center;
+			font-size: 16px;
+			padding: none;
+			width: 130px;
+			transition: all 0.5s;
+			cursor: pointer;
+			margin: 5px;
+			text-decoration: bold;
+		}
+		h4{
+		text-align:left;
+		
+		}
+		.text-orange{
+	color:#f4511e;
+}
+	</style>
 </head>
 <body id="about">
 
@@ -46,7 +92,7 @@
 						</div>
 					
 					</li>
-					<li><a href="/">TIN TỨC</a></li>
+					<li><a href="/">HÌNH ẢNH</a></li>
 					
 					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/achievements">THÀNH TÍCH <i class="fa ti-angle-down icon-extra-small text-white tz-icon-color"></i></a>
 						<div class="dropdown-content">
@@ -62,32 +108,96 @@
 			</div>
 		</nav>
 
-	<div class="bgabout jumbotron text-center" >
+	<div class="bgabout jumbotron text-center" style="margin-bottom:60px">
 		<h1>ACE</h1> 
 		<p>English Cần Thơ</p> 
+		<hr>
 		<div id="about" class="container-fluid">
-  
-      
-			<h4>ACE English tự hào là một trong những trung tâm anh ngữ uy tín chất lượng hàng đầu Cần Thơ.<br>
+			<div class="row">
+				<div class="col-md-4 col-sm-6 col-xs-12">
+			<img src="/static/teach.png" style="float:center; width:200px;"></img>
+				</div>
+			<div class="col-md-7 col-sm-6 col-xs-12" style="padding-left:10px;">
+			<h4>ACE English tự hào là một trong những trung tâm anh ngữ uy tín chất lượng hàng đầu Cần Thơ.
 			Với đội ngũ giáo viên trẻ, đầy nhiệt huyết với quyết tâm xây dựng mô hình học tập tiếng Anh sinh động, hiện đại.
-<br>			Nơi mà học viên sẽ được khám phá vẻ đẹp của tiếng Anh, thoát khỏi cách học máy móc, nhàm chán. <br>
+			Nơi mà học viên sẽ được khám phá vẻ đẹp của tiếng Anh, thoát khỏi cách học máy móc, nhàm chán. 
 Chúng tôi luôn cố gắng qua từng ngày để tự hoàn thiện bản thân, tìm ra cách tốt nhất để hướng dẫn học viên chinh phục ngoại ngữ tuyệt vời này.</h4>
-			<button class="button bg-orange"><a class="btn btn-medium propClone btn-circle text-white" href="https://docs.google.com/forms/d/1_rHfPfKRF5vxn2Aj8lBzgqSNylThLp24WHGbZTptYcU/viewform?edit_requested=true"><span class="tz-text">ĐĂNG KÍ </span><i class="fa ti-angle-right icon-extra-small tz-icon-color text-white"></i></a></button>
-                        
-    
+			<button class="button bg-white" style="float:left"><a class="btn btn-medium propClone btn-circle text-orange" href="https://docs.google.com/forms/d/1_rHfPfKRF5vxn2Aj8lBzgqSNylThLp24WHGbZTptYcU/viewform?edit_requested=true" target="_blank"><span class="tz-text">ĐĂNG KÍ >></span></a></button>
+			<hr><br>
+			</div>
 		</div>
 	</div>
 
 <!-- Container (About Section) -->
 
 
-<footer class="container-fluid text-center">
+<!--footer class="container-fluid text-center">
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
   
-</footer>
+</footer-->
+<footer class="footer-distributed">
 
+			<div class="footer-left">
+
+				<h1 class="text-orange">Ace<span class="text-white">English</span></h1>
+
+				<p class="footer-links">
+					<a href="/">Trang Chủ</a>
+					·
+					<a href="/about">Giới Thiệu</a>
+					·
+					<a href="/courses">Khóa Học</a>
+					·
+					<a href="/news">Tin Tức</a>
+					·
+					<a href="/thanh-tich-toeic">Thành Tích</a>
+					·
+					<a href="/contact">Liên Hệ</a>
+				</p>
+
+				<p class="footer-company-name">&copy;2017 Ace English. All Rights Reserved.</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa ti-map-alt icon-extra-small "></i>
+					<p><span>29/6 Ngô Văn Sở, P. Tân An, Q. Ninh Kiều </span> TP. Cần Thơ</p>
+				</div>
+
+				<div>
+					<i class="fa ti-mobile icon-extra-small "></i>
+					<p>+84 90 754 94 96</p>
+				</div>
+
+				<div>
+					<i class="fa ti-email icon-extra-small "></i>
+					<p><a href="mailto:aceenglish.cantho@gmail.com">aceenglish.cantho@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>ACE English Cần Thơ</span>
+					Thành công của bạn <br> Niềm vui của chúng tôi
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="https://www.facebook.com/aceenglish.cantho" target="_blank"><i class="fa ti-facebook icon-small "></i> </a>
+					<a href="#"><i class="fa ti-instagram icon-small "></i></a>
+					<a href="#"><i class="fa ti-google icon-small "></i></a>
+					<a href="#"><i class="fa ti-youtube icon-small "></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link

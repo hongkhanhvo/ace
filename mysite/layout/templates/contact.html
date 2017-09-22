@@ -16,17 +16,18 @@
    <!-- themify-icons -->
   <link href="/static/icons/themify-icons.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/static/stylesheet.css">
+  <link rel="stylesheet" href="/static/footer-distributed-with-address-and-phones.css">
   <link rel="stylesheet" href="/static/gallery-grid.css">
   <style>
-	.btn{
+	.btn:hover{
 		margin: 15px 0;
-      background-color: #f4511e;
+      background-color: #f4511e!important;
       color: #fff;
 	  border: 1px solid #f4511e;
 	}
-	.btn:hover{
+	.btn{
 		border: 1px solid #f4511e;
-      background-color: #fff !important;
+      background-color: #fff ;
       color: #f4511e;
   }
   .btn a:hover{
@@ -48,11 +49,64 @@
 		text-decoration:none;
 		color: #f4511e;
 		}
+	
+		.footer-center a, .footer-icons a{
+			color:white !important;
+			text-decoration:none;
+		}
 		
+		.footer-center a:hover, .footer-icons a:hover, .footer-links a:hover{
+			color:#f4511e !important;
+			text-decoration:none;
+		}
+		.footer-distributed{
+	background-color:#333;
+	opacity: 0.9;
+	color: #fff !important;}
+		
+		.feature-box{
+			height:150px;
+			border: none;
+			padding-top:10px;
+			margin-left:0px;
+			margin-right:0px;
+		}
+		.feature-box a{
+			color:black;
+			text-decoration:none;
+		}
+		.feature-box a:hover{
+			color:#f4511e;
+			text-decoration:none;
+		}
+		hr { 
+			display: block;
+			margin-top: 0.5em;
+			margin-bottom: 2em;
+			margin-left: auto;
+			margin-right: auto;
+			border-style: inset;
+			border-width: 1px;
+		}
+		
+			
+		#map {
+		   width: 80%;
+		   height: 300px;
+		
+		 }
+	</style>
+	
 </style>
 </head>
-<body id="contact" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="contact">
 
+
+
+
+<!-- Container (Contact Section) -->
+<div style="background-color:white; margin-top:0px; width=100%">
+	
 <nav class="navbar navbar-default navbar-fixed-top" style="width:100%">
 			<div class="container-fluid">
 				<div class="navbar-header">
@@ -77,7 +131,7 @@
 						</div>
 					
 					</li>
-					<li><a href="/">TIN TỨC</a></li>
+					<li><a href="/hinh-anh-lop-hoc">HÌNH ẢNH</a></li>
 					
 					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/achievements">THÀNH TÍCH <i class="fa ti-angle-down icon-extra-small text-white tz-icon-color"></i></a>
 						<div class="dropdown-content">
@@ -96,10 +150,8 @@
 
 
 
-<!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center">LIÊN HỆ</h2>
-  <div class="row">
+  <br><br><h2 class="text-center" style="font-size:60px; letter-spacing:10px;">LIÊN HỆ</h2><br><hr>
+  <!--div class="row">
     <div class="col-sm-5">
       <p> Hãy liên hệ ACE khi bạn cần được tư vấn giúp đỡ. </p>
       <p><i class="fa ti-location-pin icon-small text-orange tz-icon-color"></i>&nbsp;&nbsp;&nbsp; 29/6 Ngô Văn Sở, P. Tân An, Q. Ninh Kiều, TP. Cần Thơ</p>
@@ -124,7 +176,140 @@
       </div>
     </div>
   </div>
+</div-->
+
+
+<div class="row four-column equalize xs-equalize-auto">
+                    <!-- feature box -->
+                    <div class="col-md-3 col-sm-6 col-xs-12 sm-margin-seven-bottom xs-margin-fifteen-bottom text-center sm-clear-both " >
+                        <div class="contact-details builder-bg bg-white xs-margin-seven xs-no-margin-tb height-100 feature-box">     
+                            <i class="fa ti-location-pin text-deep-orange icon-large tz-icon-color margin-ten-bottom"></i>
+                            <h3 class="feature-title text-dark-gray text-medium alt-font display-block margin-three-bottom xs-margin-five-bottom tz-text">Địa Chỉ</h3>
+                            <div class="feature-text text-medium center-col tz-text">29/6 Ngô Văn Sở, P. Tân An,<br> Q. Ninh Kiều, TP. Cần Thơ</div>
+                        </div>
+                    </div>
+                    <!-- end feature box -->
+                    <!-- feature box -->
+                    <div class="col-md-3 col-sm-6 col-xs-12 sm-margin-seven-bottom xs-margin-fifteen-bottom text-center">
+                        <div class="contact-details builder-bg bg-white xs-margin-seven xs-no-margin-tb height-100 feature-box">
+                            <i class="fa ti-mobile text-deep-orange icon-large tz-icon-color margin-ten-bottom"></i>
+                            <h3 class="feature-title text-dark-gray text-medium alt-font display-block margin-three-bottom xs-margin-five-bottom tz-text">Điện Thoại</h3>
+                            <div class="feature-text text-medium center-col tz-text">+84 907549496</div>
+                        </div>
+                    </div>
+                    <!-- end feature box -->
+                    <!-- feature box -->
+                    <div class="col-md-3 col-sm-6 col-xs-12 text-center xs-margin-fifteen-bottom sm-clear-both">
+                        <div class="contact-details builder-bg bg-white xs-margin-seven xs-no-margin-tb height-100 feature-box">
+                            <i class="fa ti-email text-deep-orange icon-large tz-icon-color margin-ten-bottom"></i>
+                            <h3 class="feature-title text-dark-gray text-medium alt-font display-block margin-three-bottom xs-margin-five-bottom tz-text">Email</h3>
+                            <div class="feature-text text-medium center-col"><a class="tz-text" href="mailto:aceenglish.cantho@gmail.com">aceenglish.cantho@gmail.com</a></div>
+                        </div>
+                    </div>
+                    <!-- end feature box -->
+                    <!-- feature box -->
+                    <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                        <div class="contact-details builder-bg bg-white xs-margin-seven xs-no-margin-tb height-100 feature-box">
+                            <i class="fa ti-time text-deep-orange icon-large tz-icon-color margin-ten-bottom"></i>
+                            <h3 class="feature-title text-dark-gray text-medium alt-font display-block margin-three-bottom xs-margin-five-bottom tz-text">Giờ Làm Việc</h3>
+                            <div class="feature-text text-medium center-col tz-text">Mon to Sat - 9 AM to 11 PM<br>Sunday 10 AM to 6 PM</div>
+                        </div>
+                    </div>
+                    <!-- end feature box -->
 </div>
+            
+<hr>
+
+ <div class="row">
+    <div class="col-sm-5">
+      <div id="map">
+		
+	  
+	  
+	  
+	  </div>
+	</div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+			<button class="btn btn-default pull-left" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+	<footer class="footer-distributed" style="margin-bottom:0px;width:100%">
+
+			<div class="footer-left">
+
+				<h1 class="text-orange">Ace<span class="text-white">English</span></h1>
+
+				<p class="footer-links">
+					<a href="/">Trang Chủ</a>
+					·
+					<a href="/about">Giới Thiệu</a>
+					·
+					<a href="/courses">Khóa Học</a>
+					·
+					<a href="/news">Tin Tức</a>
+					·
+					<a href="/thanh-tich-toeic">Thành Tích</a>
+					·
+					<a href="/contact">Liên Hệ</a>
+				</p>
+
+				<p class="footer-company-name">&copy;2017 Ace English. All Rights Reserved.</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa ti-map-alt icon-extra-small "></i>
+					<p><span>29/6 Ngô Văn Sở, P. Tân An, Q. Ninh Kiều </span> TP. Cần Thơ</p>
+				</div>
+
+				<div>
+					<i class="fa ti-mobile icon-extra-small "></i>
+					<p>+84 90 754 94 96</p>
+				</div>
+
+				<div>
+					<i class="fa ti-email icon-extra-small "></i>
+					<p><a href="mailto:aceenglish.cantho@gmail.com">aceenglish.cantho@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>ACE English Cần Thơ</span>
+					Thành công của bạn <br> Niềm vui của chúng tôi
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="https://www.facebook.com/aceenglish.cantho" target="_blank"><i class="fa ti-facebook icon-small "></i> </a>
+					<a href="#"><i class="fa ti-instagram icon-small "></i></a>
+					<a href="#"><i class="fa ti-google icon-small "></i></a>
+					<a href="#"><i class="fa ti-youtube icon-small "></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+
 
 <!--div class="jumbotron text-center">
   <h1>OR</h1> 
@@ -140,9 +325,24 @@
 </div-->
 
 
-
-
 <script>
+      function initMap() {
+        var uluru = {lat: 10.033924, lng: 105.785670};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALvnBU6dUQIHMp0CXHlt-8ZAuX6Is-A1U&callback=initMap">
+    </script>
+
+<!--script>
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='/']").on('click', function(event) {
@@ -177,7 +377,7 @@ $(document).ready(function(){
     });
   });
 })
-</script>
+</script-->
 
 </body>
 </html>

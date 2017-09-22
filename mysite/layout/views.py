@@ -37,3 +37,6 @@ class ThanhTichVstepPageView(TemplateView):
 
 class ThanhTichToeicPageView(TemplateView):
     template_name = "thanh-tich-toeic.html"
+
+class HinhAnhLopHocPageView(TemplateView):
+    template_name = "hinh-anh-lop-hoc.html"

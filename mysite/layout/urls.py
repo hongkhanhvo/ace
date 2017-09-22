@@ -15,4 +15,5 @@ urlpatterns = [
     url(r'^thanh-tich-ielts/$', views.ThanhTichIeltsPageView.as_view()),
     url(r'^thanh-tich-toeic/$', views.ThanhTichToeicPageView.as_view()),
     url(r'^thanh-tich-vstep/$', views.ThanhTichVstepPageView.as_view()),
+    url(r'^hinh-anh-lop-hoc/$', views.HinhAnhLopHocPageView.as_view()),
 ]
